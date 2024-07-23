@@ -1,0 +1,14 @@
+form.form.form--data(method="POST" action="/api/v1/blogs" enctype="multipart/form-data")
+  label.form__label(for="title") Title
+  input.form__input#title(type="text" name="title" required)
+
+  label.form__label(for="author") Author
+  input.form__input#author(type="text" name="author" required)
+  
+  label.form__label(for="description") Description
+  textarea.form__textArea#description(name="description" required)
+
+  label(for="image") Image 
+  input.form__image#image(type="file", name="image")
+
+  button.form__submit(type="submit") Submit

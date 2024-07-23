@@ -1,0 +1,19 @@
+.header {
+
+    &__ul {
+        @apply flex justify-center items-center gap-[4rem];
+        @apply w-full min-h-[10rem] bg-[#050C9C];
+    }
+
+    &__li {
+
+    }
+
+    &__link {
+        @apply text-white;
+
+        &:hover {
+            @apply text-[#FFF6E9];
+        }
+    }
+}

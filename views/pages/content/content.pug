@@ -1,0 +1,11 @@
+
+extends ../../index
+
+block content
+    main 
+        div(class="blog")
+            ul.blog__box
+                li(class="blog__header") Blog data
+                li(class="blog__card")
+                    each blog in blogs
+                        div(class="blog__div")= blog.title

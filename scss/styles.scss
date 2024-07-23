@@ -1,0 +1,9 @@
+@import "abstract/reset.scss";
+@import "pages/blog.scss";
+@import "components/form/form.scss";
+@import "components/alerts/alerts.scss";
+@import 'components/header/header.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

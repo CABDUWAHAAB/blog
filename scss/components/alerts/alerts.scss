@@ -1,0 +1,13 @@
+.alert {
+    @apply fixed top-0 left-1/2 -translate-x-1/2 z-[9999];
+    @apply text-white text-[1.8rem] font-light text-center;
+    @apply rounded-b-lg px-[15rem] py-[1.6rem] shadow-lg w-[60rem];
+
+    &--success {
+        @apply bg-green-300;
+    }
+    
+    &--error {
+        @apply bg-red-500;
+    }
+}

@@ -1,0 +1,26 @@
+
+.form {
+    @apply flex flex-col gap-[1rem] justify-center items-center;
+    @apply p-[4rem] pt-[15rem];
+    &__label {
+        @apply text-3xl font-bold text-green-500 ;
+    }
+
+    &__input {
+        @apply border border-black p-2 pl-4 rounded-lg w-[50%];
+    }
+
+    &__textArea{
+        @apply w-[50%] border border-black pl-2;
+        @apply rounded-lg h-[20rem] p-4;
+    }
+
+    &__submit{
+        @apply bg-lime-300 p-[.5rem] w-[10rem];
+        @apply rounded-lg border border-amber-600;
+
+        &:hover {
+            @apply bg-teal-300 scale-[1.04] delay-150;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@layer components {
+    .blog {
+        @apply flex flex-col gap-[4rem] p-[4rem] bg-green-500;
+
+        &__header {
+            @apply text-4xl font-bold;
+        }
+
+        &__card {
+            @apply flex;
+        }
+
+        &__div {
+            @apply bg-yellow-400;
+        }
+    }
+}
