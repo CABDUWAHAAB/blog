@@ -8,7 +8,8 @@ form.form.form--data(method="POST" action="/api/v1/blogs" enctype="multipart/for
   label.form__label(for="description") Description
   textarea.form__textArea#description(name="description" required)
 
-  label(for="image") Image 
-  input.form__image#image(type="file", name="image")
+  div.form__inputFileBox
+    label.form__inputFileLabel(for="image") Image 
+    input.form__image#image(type="file", name="image")
 
   button.form__submit(type="submit") Submit

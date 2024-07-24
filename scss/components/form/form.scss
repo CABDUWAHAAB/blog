@@ -10,9 +10,21 @@
         @apply border border-black p-2 pl-4 rounded-lg w-[50%];
     }
 
+    &__image {
+        @apply w-[10rem] h-[10rem] bg-red-500;
+    }
+
     &__textArea{
         @apply w-[50%] border border-black pl-2;
         @apply rounded-lg h-[20rem] p-4;
+    }
+
+    &__inputFileBox {
+
+    }
+
+    &__inputFileLabel {
+        
     }
 
     &__submit{

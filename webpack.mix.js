@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 // Set public path
 // als je public helemaal beneden zet wordt er constant wanneer je opslaat public folder en files gemaakt
@@ -26,6 +27,14 @@ mix.webpackConfig({
   },
   externals: {
     'sharp': 'commonjs sharp'
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin({
+        minify: CssMinimizerPlugin.cleanCssMinify,
+      })
+    ]
   },
   stats: {
     children: true,
