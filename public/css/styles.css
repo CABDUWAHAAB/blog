@@ -60,13 +60,38 @@ body {
     padding: 1rem;
 }
 
-.form__inputFileBox {
+.form__uploadImage[type="file"] {
+    position: relative;
+    padding: 0.9375rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(62 62 86 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
 
-    }
-
-.form__inputFileLabel {
-        
-    }
+.form__uploadImage[type="file"]::file-selector-button {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 2.125rem;
+    padding-right: 2.125rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+    border-radius: 0.25rem;
+    border-style: none;
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    cursor: pointer;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
 
 .form__submit {
     width: 10rem;

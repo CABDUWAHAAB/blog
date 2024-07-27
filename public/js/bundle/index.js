@@ -591,7 +591,8 @@ if (formElement) formElement.addEventListener("submit", (e)=>{
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const description = document.getElementById("description").value;
-    (0, _form.submitForm)(title, author, description);
+    const upload = document.getElementById("image").value;
+    (0, _form.submitForm)(title, author, description, upload);
 });
 
 },{"./form":"eBBmS"}],"eBBmS":[function(require,module,exports) {
@@ -601,7 +602,7 @@ parcelHelpers.export(exports, "submitForm", ()=>submitForm);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _alert = require("./alert");
-const submitForm = async (title, author, description)=>{
+const submitForm = async (title, author, description, image)=>{
     try {
         const res = await (0, _axiosDefault.default)({
             method: "POST",
@@ -609,7 +610,8 @@ const submitForm = async (title, author, description)=>{
             data: {
                 title,
                 author,
-                description
+                description,
+                image
             }
         });
         if (res.data.status === "success") {

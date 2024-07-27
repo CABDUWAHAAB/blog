@@ -8,6 +8,7 @@ if (formElement) {
         const title = document.getElementById('title').value;
         const author = document.getElementById('author').value;
         const description = document.getElementById('description').value;
-        submitForm(title, author, description);
+        const upload = document.getElementById('image').value;
+        submitForm(title, author, description, upload);
     });
 }

@@ -17,14 +17,18 @@ const blogSchema = new mongoose.Schema({
     slug: {
         type: String
     },
+    image: {
+        type: String,
+        required: true
+    },
     createdAt: {
         type: Date,
         default: Date.now()
     }
 });
-
+// je gaat title als slug gebruiken
 blogSchema.pre('save', function(next) {
-    this.slug = slugify(this.name, { lower: true });
+    this.slug = slugify(this.title, { lower: true });
     next();
   });
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { showAlert } from './alert';
 
-export const submitForm = async (title, author, description) => {
+export const submitForm = async (title, author, description, image) => {
     try {
         const res = await axios({
             method: 'POST',
@@ -9,7 +9,8 @@ export const submitForm = async (title, author, description) => {
             data: {
                 title,
                 author,
-                description
+                description,
+                image
             }
         });
         if (res.data.status === 'success') {

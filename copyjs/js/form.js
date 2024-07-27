@@ -15,8 +15,9 @@ export const submitForm = async (title, author, description) => {
         if (res.data.status === 'success') {
             showAlert('success', 'Data successfully created');
             window.setTimeout(() => {
-                location.assign('/');
-            }, 1500);
+                // geef bij assign het correcte routes waar je showAlert wilt zien.
+                location.assign('/blog');
+            }, 10000);
         }
     } catch (err) {
         console.log(err.response)
